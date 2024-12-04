@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+    
+    <!-- Add your CSS directly in a <style> tag here -->
+    <style>
+      /* General body style */
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff; /* Light blue background */
+        color: #2c3e50; /* Dark gray text */
+      }
+
+      /* Navigation bar */
+      nav {
+        background: #2ecc71; /* Green */
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 4px solid #27ae60; /* Darker green border */
+      }
+
+      nav h1 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      /* List items */
+      ul {
+        list-style-type: none;
+        padding: 0;
+        max-width: 700px;
+        margin: 30px auto;
+      }
+
+      li {
+        background: #ecf0f1; /* Light gray */
+        color: #2c3e50; /* Dark gray */
+        margin: 10px 0;
+        padding: 15px;
+        border-left: 8px solid #3498db; /* Blue accent */
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+      }
+
+      li:hover {
+        background-color: #dfe6e9; /* Lighter gray */
+        transform: scale(1.03); /* Slight hover zoom */
+      }
+
+      /* Footer */
+      footer {
+        background: #2ecc71; /* Green */
+        color: white;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        border-top: 4px solid #27ae60; /* Darker green border */
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      /* Responsive design for mobile screens */
+      @media (max-width: 600px) {
+        nav h1 {
+          font-size: 22px;
+        }
+
+        li {
+          font-size: 16px;
+          padding: 10px;
+        }
+
+        footer p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- Root element for React -->
+    <div id="root"></div>
+
+    <!-- Navigation bar -->
+    <nav>
+      <h1>Task Manager</h1>
+    </nav>
+
+    <!-- Task list -->
+    <ul>
+      <li>
+        <span>Task 1</span>
+        <span>&#10003;</span>
+      </li>
+      <li>
+        <span>Task 2</span>
+        <span>&#10003;</span>
+      </li>
+      <li>
+        <span>Task 3</span>
+        <span>&#10003;</span>
+      </li>
+      <li>
+        <span>Task 4</span>
+        <span>&#10003;</span>
+      </li>
+      <li>
+        <span>Task 5</span>
+        <span>&#10003;</span>
+      </li>
+    </ul>
+
+    <!-- Footer -->
+    <footer>
+      <p>Task Manager &copy; 2024</p>
+    </footer>
+  </body>
+</html>
